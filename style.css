@@ -1,0 +1,180 @@
+body{
+    background-color: rgb(141, 179, 211);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 24px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#upperText{
+    padding-top: 30px;
+    padding-bottom: 8px;
+    margin: 0;
+}
+sub,sup{
+    padding: 0;
+    margin: 0;
+}
+.tables{
+    font-weight: bold;
+    margin: 0 auto;
+    border-spacing: 2px;
+}
+.tables td{
+    text-align: center;
+    vertical-align: bottom;
+    padding: 0;
+}
+#mainTable{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0;
+    background-color: rgb(159, 158, 158);
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- display ---------- */
+#output{
+    background-color: rgb(95, 99, 104);
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+#displayDiv{
+    background-color: black;
+    width: 330px;
+    height: 112px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#displayDiv.off > *{
+    visibility: hidden;
+}
+#status{
+    display: flex;
+    gap: 8px;
+    font-size: 11px;
+    height: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+#status span{
+    color: #444;
+}
+#status span.on{
+    color: rgb(25, 249, 0);
+}
+#stMsg{
+    margin-left: auto;
+    color: #ffd54a !important;
+}
+#ress{
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    font-size: 24px;
+    height: 32px;
+    line-height: 32px;
+    -webkit-text-stroke: 0.4px white;
+    scrollbar-width: none;
+}
+#ress::-webkit-scrollbar{
+    display: none;
+}
+.caret{
+    display: inline-block;
+    width: 2px;
+    height: 24px;
+    margin: 0 1px;
+    vertical-align: middle;
+    background: white;
+    animation: blink 1s steps(1) infinite;
+}
+@keyframes blink{
+    50%{ opacity: 0; }
+}
+#result{
+    text-align: right;
+    font-size: 30px;
+    height: 38px;
+    line-height: 38px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-text-stroke: 0.6px white;
+}
+#result.error{
+    font-size: 22px;
+    color: #ff8a80;
+    -webkit-text-stroke: 0;
+}
+
+/* ---------- buttons ---------- */
+.btn{
+    background-color: rgb(57,57,57);
+    color: white;
+    width: 60px;
+    height: 40px;
+    border-radius: 2vh;
+    border-width: 3px;
+    cursor: pointer;
+}
+.btn2{
+    background-color: rgb(57, 56, 56);
+    color: white;
+    width: 50px;
+    height: 35px;
+    border-radius: 1vh;
+    border-width: 3px;
+    cursor: pointer;
+}
+.btn:hover, .btn2:hover{
+    color: rgb(25, 249, 0);
+    font-size: 90%;
+    font-weight: bold;
+    background-color:#222;
+}
+.btn:active, .btn2:active{
+    background-color: black;
+}
+.btn:focus-visible, .btn2:focus-visible{
+    outline: 2px solid rgb(25, 249, 0);
+}
+#shift, #alpha, #mode_setup, #on, #calc, #integrate, #x_pow_m_one, #logerithm{
+    border-radius: 10vh;
+}
+#shift{ border-color: #e0b400; }
+#alpha{ border-color: #d9443a; }
+#shift.active{ background-color: #e0b400; color: black; }
+#alpha.active{ background-color: #d9443a; color: white; }
+#equal{ background-color: rgb(120,120,120); }
+#AC, #DEL{ background-color: #6b2f2f; }
+
+/* small shift / alpha labels above the keys */
+.lbl{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    height: 12px;
+    font-size: 10px;
+    line-height: 12px;
+    font-family: Arial, sans-serif;
+}
+.lbl .ls{ color: #8a6d00; }
+.lbl .la{ color: #b3261e; }
+
+@media (max-width: 380px){
+    main{ zoom: 0.8; }
+}

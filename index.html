@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="feviconn.png">
+</head>
+<body>
+    <main>
+        <h4 id="upperText">Calculate Anything</h4>
+        <table id="mainTable">
+            <tr>
+                <td id="output">
+                    <div id="displayDiv">
+                        <div id="status">
+                            <span id="stShift">S</span>
+                            <span id="stAlpha">A</span>
+                            <span id="stHyp">hyp</span>
+                            <span id="stAngle">D</span>
+                            <span id="stMem">M</span>
+                            <span id="stMsg"></span>
+                        </div>
+                        <div id="ress"></div>
+                        <div id="result">0</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table id="table1" class="tables">
+                        <tr>
+                            <td><button class="btn" id="shift">shift</button></td>
+                            <td><button class="btn" id="alpha">alpha</button></td>
+                            <td><button class="btn" id="up">▲</button></td>
+                            <td><button class="btn" id="mode_setup">mode setup</button></td>
+                            <td><button class="btn" id="on">on</button></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn" id="left">◀</button></td>
+                            <td></td>
+                            <td><button class="btn" id="right">▶</button></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" id="calc">calc</button></td>
+                            <td><button class="btn" id="integrate">∫</button></td>
+                            <td><button class="btn" id="down">▼</button></td>
+                            <td><button class="btn" id="x_pow_m_one">X<sup>-1</sup></button></td>
+                            <td><button class="btn" id="logerithm">log<sub>[]</sub>[]</button></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table id="table2" class="tables">
+                        <tr>
+                            <td><button class="btn2" id="divided">◼/☐</button></td>
+                            <td><button class="btn2" id="sqroot">√☐</button></td>
+                            <td><button class="btn2" id="square">X<sup>2</sup></button></td>
+                            <td><button class="btn2" id="power">X<sup>☐</sup></button></td>
+                            <td><button class="btn2" id="log">log</button></td>
+                            <td><button class="btn2" id="ln">ln</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn2" id="brackets">(-)</button></td>
+                            <td><button class="btn2" id="odotdot">o,,,</button></td>
+                            <td><button class="btn2" id="hyp">hyp</button></td>
+                            <td><button class="btn2" id="sin">sin</button></td>
+                            <td><button class="btn2" id="cos">cos</button></td>
+                            <td><button class="btn2" id="tan">tan</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn2" id="RCE">RCL</button></td>
+                            <td><button class="btn2" id="ENG">ENG</button></td>
+                            <td><button class="btn2" id="left_bracket">(</button></td>
+                            <td><button class="btn2" id="right_bracket">)</button></td>
+                            <td><button class="btn2" id="sd">S⇔D</button></td>
+                            <td><button class="btn2" id="M_plus">M+</button></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table id="table3" class="tables">
+                        <tr>
+                            <td><button class="btn" id="seven">7</button></td>
+                            <td><button class="btn" id="eight">8</button></td>
+                            <td><button class="btn" id="nine">9</button></td>
+                            <td><button class="btn" id="DEL">DEL</button></td>
+                            <td><button class="btn" id="AC">AC</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" id="four">4</button></td>
+                            <td><button class="btn" id="five">5</button></td>
+                            <td><button class="btn" id="six">6</button></td>
+                            <td><button class="btn" id="multiply">X</button></td>
+                            <td><button class="btn" id="devide">/</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" id="one">1</button></td>
+                            <td><button class="btn" id="two">2</button></td>
+                            <td><button class="btn" id="three">3</button></td>
+                            <td><button class="btn" id="plus">+</button></td>
+                            <td><button class="btn" id="minus">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn" id="zero">0</button></td>
+                            <td><button class="btn" id="dot">.</button></td>
+                            <td><button class="btn" id="ten">x10<sup>x</sup></button></td>
+                            <td><button class="btn" id="Ans">Ans</button></td>
+                            <td><button class="btn" id="equal">=</button></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
